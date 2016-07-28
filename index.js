@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/styles.css', function(req, res) {
-  res.sendFile(__dirname + '/styles.css')
+  res.send('THIS IS NOT WHAT YOU EXPECTED')
 })
 
 io.on('connection', function(socket){
